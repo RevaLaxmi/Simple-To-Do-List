@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+ /* what colors do we want..
+ can go with a black and white tone background. 
+
+ */ 
+
+* {
+  box-sizing: border-box;
+}
+
+ /* this is for the background of everything*/ 
+body {
+  background-color: #92dadfc2;
+   /* color of the text once it is inputted (is that even a word..)*/ 
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+  margin: 0;
+}
+
+ /* this is for the heading to do */ 
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.4;  /* we can mess around with this */ 
+}
+
+ /* the form box - this color decide the little drop shadow that we have*/ 
+form {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.747);
+  max-width: 100%;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+ /* the color of the text that we input */ 
+.input {
+  border: none;
+  color: #000000;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.input::placeholder {
+  color: #d5d5d5;
+  text-align: center;
+}
+
+ /* color of the highlighted box when the input is being typed out */ 
+.input:focus {
+  outline-color: rgb(80, 139, 167);
+}
+
+.todos {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+/* the text at the bottom which has some kind of instructions*/
+small {
+  color: rgb(0, 0, 0);
+  margin-top: 3rem;
+  text-align: center;
+  opacity: 0.4;  /* we can mess around with this */ 
+}
